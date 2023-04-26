@@ -1,0 +1,31 @@
+### GET A USER BY ID
+GET http://localhost:8080/users/e7ed6e4f-31fb-4b1d-ab97-5acbb0e38240
+Accept: application/json
+
+### GET COLLECTION OF USERS
+GET http://localhost:8080/users?page=1&limit=25&sort=ads
+
+### CREATE USER
+POST http://localhost:8080/users
+Accept: application/json
+Content-Type: application/json
+
+{
+    "firstName": "Lefos",
+    "lastName": "Evan",
+    "email": "test@test.com",
+    "password": "test1234"
+}
+
+### UPDATE A USER
+PUT http://localhost:8080/users/b045c5fd-ff80-445f-a695-aa93605a6e1a
+Accept: application/json
+Content-Type: application/json
+
+{
+    "firstName": "George",
+    "lastName": "Evangelinos"
+}
+
+### DELETE A USER
+DELETE http://localhost:8080/users/e7ed6e4f-31fb-4b1d-ab97-5acbb0e38240
